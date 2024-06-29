@@ -1,7 +1,9 @@
-sum = 0
-
-10.times do |i|
-  sum = sum + i + 1
+def accumulate
+  sum = 0
+  10.times do |n|
+    sum += (n + 1 )
+  end
+  sum
 end
 
-puts sum
+puts accumulate

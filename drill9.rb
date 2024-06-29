@@ -1,7 +1,9 @@
 def accumulate
+  sum = 0
   10.times do |n|
-    n = n += 1
+    sum += (n + 1 )
   end
+  sum
 end
 
 puts accumulate

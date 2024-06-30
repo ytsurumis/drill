@@ -1,7 +1,11 @@
 def search(target_num, input)
-  input.each_with_index do |target_num, input|
-    puts "#{input}番目にあります"
+  input.each_with_index do |num, index|
+    if num == target_num
+      puts "#{index + 1}番目にあります"
+      return
+    end
   end
+  puts "見つかりませんでした"
 end
 
 input = [3, 5, 9, 12, 15, 21, 29, 35, 42, 51, 62, 78, 81, 87, 92, 93]

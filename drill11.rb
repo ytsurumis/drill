@@ -7,6 +7,7 @@ def check_name(str)
     puts "登録が完了しました"
   end
 end
+
 puts "登録したい名前を入力してください（例）YamadaTaro"
 str = gets
 check_name(str)

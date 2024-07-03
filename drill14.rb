@@ -11,6 +11,7 @@ end
 puts "数字を入力してください"
 num = gets.to_i
 puts "trueかfalseを入力してください"
-outside_mode = gets
+outside_mode_input = gets.chomp.downcase
+outside_mode = outside_mode_input == "true"
 
 in1to10(num, outside_mode)

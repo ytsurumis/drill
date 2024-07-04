@@ -1,9 +1,9 @@
 def output(num)
   num.times do
-    puts "Hello!"
+    puts "Hello"
   end
 end
 
 puts "何回表示させますか？"
-num = gets.to_i
-output(num)
+n = gets.to_i
+output(n)

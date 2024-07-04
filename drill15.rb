@@ -1,5 +1,5 @@
-def output(n)
-  n.times do |i|
+def output(num)
+  num.times do
     puts "Hello"
   end
 end

@@ -1,15 +1,14 @@
 class Fruit
-
-  def self.fresh
+  def self.fresh # クラスメソッド
     puts "採れたて新鮮な果実です"
   end
 
-  def initialize(name,price)
+  def initialize(name, price)
     @name = name
     @price = price
   end
 
-  def introduce
+  def introduce # インスタンスメソッド
     puts "#{@name}は#{@price}円です"
   end
 end

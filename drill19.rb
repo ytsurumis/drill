@@ -1,5 +1,8 @@
 def count_hi(str)
-  puts str.scan("hi").length
+ str.scan("hi").length
 end
 
-count_hi('abc hi ho')
+puts "文字列を入力してください"
+input_str = gets.chomp
+
+puts count_hi(input_str)

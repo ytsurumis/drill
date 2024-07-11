@@ -1,5 +1,5 @@
 def count_hi(str)
- count = str.scan("hi").length
+ str.scan("hi").length
 end
 
 puts "文字列を入力してください"

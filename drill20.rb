@@ -1,7 +1,7 @@
-def count_code(str)
-  str.index('code', [n+1])
+def find_code(str)
+  str.index('code')
 end
 
 puts "文字列を入力してください"
 input_str = gets.chomp
-puts count_code(input_str)
+puts find_code(input_str) + 1

@@ -1,5 +1,8 @@
 def array123(nums)
   if nums.include?(1) && nums.include?(2) && nums.include?(3)
+    return true
+  else
+    return false
   end
 end
 

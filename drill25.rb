@@ -7,9 +7,9 @@ def multiplication(a, b)
 end
 
 def slice_num(num)
-  x = num / 10
-  y = num % 10
-  return x, y # 10の位と1の位の計算を行い、その結果を返す
+  tens_place = num / 10
+  ones_place = num % 10
+  return tens_place, ones_place # 10の位と1の位の計算を行い、その結果を返す
 end
 
 puts "二桁の整数を入力してください"

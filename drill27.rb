@@ -2,7 +2,7 @@ def num(a, b, c)
   ab = a + b
   if c <= 3
     ab / c
-  elsif c >= 4
+  else
     ab * c
   end
 end

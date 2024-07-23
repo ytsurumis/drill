@@ -1,14 +1,19 @@
 def calculate_points(amount, is_birthday)
   if amount <= 999
-    point = amount * 0.03
+    rate = 0.03
   else
-    point = amount * 0.05
+    rate = 0.05
   end
+
   if is_birthday
-    point = point * 5
+    rate *= 5
   end
-    puts "ポイントは#{point.floor}です"
+
+  points = (amount * rate).floor
+
+  "ポイントは#{points}点です"
 end
 
-calculate_points(500, false)
-calculate_points(1000, true)
+puts calculate_points(500, false)
+puts calculate_points(2000, false)
+puts calculate_points(3000, true)

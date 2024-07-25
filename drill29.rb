@@ -1,17 +1,19 @@
+Fizz = 3
+Buzz= 5
+FizzBuzz = 15
+
 def fizz_buzz
-  num =1 
-  while (num <= 100) do
-    if (num % 3 ==0) && (num % 5 == 0)
+  100.times do |i|
+    number = i + 1
+    if (number % FizzBuzz).zero?
       puts "FizzBuzz"
-    elsif (num % 3) == 0
+    elsif (number % Fizz).zero?
       puts "Fizz"
-    elsif (num % 5) == 0
+    elsif (number % Buzz).zero?
       puts "Buzz"
     else
-      puts num
+      puts number
     end
-
-    num = num + 1
   end
 end
 

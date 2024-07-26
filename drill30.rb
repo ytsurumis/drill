@@ -1,14 +1,18 @@
-def fizzbuzz(max_num)
+Fizz = 3
+Buzz = 5
+FizzBuzz = 15
 
-  (1..max_num).each do |num|
-    if num % 15 == 0
-      puts "FizzBuzz"
-    elsif num % 5 == 0
-      puts "Buzz"
-    elsif num % 3 == 0
-      puts "Fizz"
+def fizzbuzz(max_num)
+  max_num.times do |i|
+    number = i + 1
+    if (number % FizzBuzz).zero?
+      puts 'FizzBuzz'
+    elsif (number % Buzz).zero?
+      puts 'Buzz'
+    elsif (number % Fizz).zero?
+      puts 'Fizz'
     else
-      puts num
+      puts number
     end
   end
 end

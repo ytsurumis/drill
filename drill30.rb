@@ -5,11 +5,11 @@ FizzBuzz = 15
 def fizzbuzz(max_num)
   max_num.times do |i|
     number = i + 1
-    if number % FizzBuzz == 0
+    if (number % FizzBuzz).zero?
       puts 'FizzBuzz'
-    elsif number % Buzz == 0
+    elsif (number % Buzz).zero?
       puts 'Buzz'
-    elsif number % Fizz == 0
+    elsif (number % Fizz).zero?
       puts 'Fizz'
     else
       puts number

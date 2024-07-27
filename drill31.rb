@@ -1,11 +1,14 @@
 def end_other(a, b)
-  if a.downcase.slice(-3..-1) == b.downcase.slice(-3..-1)
-    puts 'True'
+  a_down = a.downcase
+  b_down = b.downcase
+  if a_down.end_with?(b_down) || b_down.end_with?(a_down)
+    true
   else
-    puts 'False'
+    false
   end
 end
 
-end_other('Hiabc', 'abc')
-end_other('AbC', 'HiaBc')
-end_other('abc', 'HaloBc')
+puts end_other('Hiabc', 'abc')
+puts end_other('AbC', 'HiaBc')
+puts end_other('abc', 'HaloBc')
+puts end_other('Hi', 'abchihi')

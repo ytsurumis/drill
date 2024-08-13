@@ -1,6 +1,6 @@
-def near_ten(str)
-  answer = str % 10
-  if answer <= 2
+def near_ten(num)
+  remainder = num % 10
+  if remainder <= 2 || remainder >= 8
     true
   else
     false

@@ -1,4 +1,5 @@
 def lone_sum(ary)
+  
   uniq_nums = []
   ary.each do |num|
     count = 0
@@ -12,7 +13,6 @@ def lone_sum(ary)
     end
   end
 
-  # uniq_nums配列内の合計
   sum = 0
   uniq_nums.each do |unique_num|
     sum += unique_num
@@ -20,5 +20,12 @@ def lone_sum(ary)
   puts sum
 end
 
+lone_sum([1, 2, 3])
+lone_sum([3, 2, 3])
+lone_sum([3, 3, 3])
 
-lone_sum([3,2,3])
+# fruits = ['りんご', 'オレンジ', 'バナナ', 'パイナップル']
+
+# fruits.each do |item|
+#   puts item
+# end

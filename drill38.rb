@@ -28,5 +28,5 @@ else
 end
 
 # array = [1, 2, 3, 4, 5]
-# number_of_elements = array.length
-# puts number_of_elements
+# right = array.length - 1
+# puts right

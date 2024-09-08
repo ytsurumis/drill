@@ -5,15 +5,15 @@ def binary_search(array, right, target)
     if array[center] == target
       return center
     elsif array[center] < target
-      left = enter + 1
+      left = center + 1
     else
       right = center - 1
     end
   end
-  return -1
+  return - 1
 end
 
-array = [1,3,5,6,9,10,13,20,26,31]
+array=[1, 3, 5, 6, 9, 10, 13, 20, 26, 31]
 
 puts "検索したい数字を入力してください"
 target = gets.to_i
@@ -26,3 +26,7 @@ if result == -1
 else
   puts "#{target}は配列の#{result}番目に存在します"
 end
+
+# array = [1, 2, 3, 4, 5]
+# right = array.length - 1
+# puts right
